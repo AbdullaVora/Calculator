@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bg">
+            <div class="calc_body">
+                <input type="text" class="screen" id="input1" placeholder="0" >
+                <div class="btn-group">
+                    <!-- col-1 -->
+                    <button class="btn"  onclick="clrall();"><span>CE</span></button>
+                    <button class="btn"  onclick="clr();"><span>AC</span></button>
+                    <button class="btn" id="operat" value="%"  onclick="operats('%');"><span>%</span></button>
+                    <button class="btn" id="operat" value="/"  onclick="operats('/')"><span>/</span></button>
+
+                    <!-- col-2 -->
+                    <button class="btn" id=input1 onclick="display(1)"><span style="padding-right: 12px;">1</span></button>
+                    <button class="btn" id=input1 onclick="display(2)"><span>2</span></button>
+                    <button class="btn" id=input1 onclick="display(3)"><span>3</span></button>
+                    <button class="btn" id="operat"  vlaue="*" onclick="operats('*')"><span>*</span></button>
+
+                    <!-- col-3 -->
+                    <button class="btn" id=input1 onclick="display(4)"><span>4</span></button>
+                    <button class="btn" id=input1 onclick="display(5)"><span>5</span></button>
+                    <button class="btn" id=input1 onclick="display(6)"><span>6</span></button>
+                    <button class="btn" id="operat"  vlaue="-" onclick="operats('-')"><span>-</span></button>
+
+                    <!-- col-4 -->
+                    <button class="btn" id=input1 onclick="display(7)"><span>7</span></button>
+                    <button class="btn" id=input1 onclick="display(8)"><span>8</span></button>
+                    <button class="btn" id=input1 onclick="display(9)"><span>9</span></button>
+                    <button class="btn" id="operat"  vlaue="+" onclick="operats('+')"><span>+</span></button>
+
+                    <!-- col-5 -->
+                    <button class="btn" id=input1 onclick="display(0)"><span>0</span></button>
+                    <button class="btn" id=input1 onclick="display('00')"><span>00</span></button>
+                    <button class="btn"  onclick="display('.')"><span>.</span></button>
+                    <button class="btn" id="ans" vlaue=""  onclick="calculate()"><span>=</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
